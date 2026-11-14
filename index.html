@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="СветлыйДом — клининг квартир в Москве и МО. Фиксированная цена, немецкая эко-химия Kiehl, чек-лист из 42 пунктов.">
+  <meta name="theme-color" content="#f6f7f2">
+  <title>СветлыйДом — честный клининг квартир в Москве</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="#">Светлый<span>Дом.</span></a>
+
+    <div class="header-meta">
+      <span class="status-dot"></span> Работаем по Москве и МО · 08:00–22:00
+    </div>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      aria-controls="nav"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 7h16M4 12h16M4 17h10"/>
+      </svg>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#services">Тарифы</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#about">Стандарты</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a class="nav-cta" href="#contact">Вызвать клинера</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge-row">
+          <span class="eyebrow-badge">Эко-средства Kiehl (Германия)</span>
+          <span class="eyebrow-badge eyebrow-outline">Оплата после приёмки</span>
+        </div>
+
+        <h1>
+          Отмоем квартиру за 3–5 часов, <span>пока вы занимаетесь жизнью.</span>
+        </h1>
+
+        <p class="hero-text">
+          Приезжаем со своим инвентарём и техникой Karcher. Не поднимаем цену на месте, не оставляем разводов на зеркалах и оттираем даже застарелый налёт в санузле.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#calc">
+            Рассчитать стоимость за 30 секунд →
+          </a>
+          <a class="button-ghost" href="#services">
+            Что входит в уборку
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div>
+            <strong>4.9 ★</strong>
+            <span>средняя оценка на основе 640+ выездов</span>
+          </div>
+          <div>
+            <strong>до 500 000 ₽</strong>
+            <span>страховка имущества на время работ</span>
+          </div>
+          <div>
+            <strong>42 пункта</strong>
+            <span>в обязательном чек-листе клинера</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Светлая чистая гостиная после уборки"
+        ></div>
+        <div class="floating-card">
+          <div class="fc-icon">✓</div>
+          <div>
+            <strong>Гарантия 24 часа</strong>
+            <p>Заметили пропуск? Вернёмся и переделаем бесплатно или вернём деньги.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / TARIFFS -->
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ТАРИФЫ И ЧЕК-ЛИСТ</p>
+          <h2>Понятные цены без доплат «за каждый шаг»</h2>
+        </div>
+        <p class="heading-sub">
+          В любую уборку уже входят моющие средства, стремянка, пылесос и расходники. Ничего покупать не нужно.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <div class="card-top">
+            <span class="service-tag">Раз в 1–2 недели</span>
+            <span class="service-time">~ 2.5–3.5 часа</span>
+          </div>
+
+          <h3>Поддерживающая</h3>
+          <div class="price-line">от 2 900 ₽</div>
+          <p class="service-desc">
+            Освежить квартиру, убрать пыль, помыть полы и навести порядок в ванной и на кухне.
+          </p>
+
+          <ul class="checklist">
+            <li>Сухая и влажная уборка всех полов и плинтусов</li>
+            <li>Протирка подоконников, розеток, дверей и зеркал</li>
+            <li>Мытьё раковины, плиты и столешницы на кухне</li>
+            <li>Дезинфекция сантехники и смесителей</li>
+            <li>Вынос мусора до 2 пакетов</li>
+          </ul>
+
+          <a class="card-btn" href="#calc" data-select-type="basic">Рассчитать точную цену →</a>
+        </article>
+
+        <article class="service-card featured">
+          <div class="popular-ribbon">Выбирают 65% клиентов</div>
+          <div class="card-top">
+            <span class="service-tag">Раз в 3–6 месяцев</span>
+            <span class="service-time">~ 5–7 часов</span>
+          </div>
+
+          <h3>Генеральная уборка</h3>
+          <div class="price-line">от 5 400 ₽</div>
+          <p class="service-desc">
+            Глубокая чистка каждого угла: от верхушек кухонных шкафов до пространства за диваном и стиральной машиной.
+          </p>
+
+          <ul class="checklist">
+            <li>Всё, что входит в поддерживающую уборку</li>
+            <li>Обезжиривание кухонного фартука, вытяжки и фасадов</li>
+            <li>Удаление водного камня и ржавчины с плитки и швов</li>
+            <li>Чистка люстр, радиаторов отопления и карнизов</li>
+            <li>Мытьё микроволновки и холодильника внутри</li>
+          </ul>
+
+          <a class="card-btn card-btn-primary" href="#calc" data-select-type="deep">Рассчитать точную цену →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="card-top">
+            <span class="service-tag">Бригада 2–4 человека</span>
+            <span class="service-time">~ 6–9 часов</span>
+          </div>
+
+          <h3>После ремонта</h3>
+          <div class="price-line">от 7 200 ₽</div>
+          <p class="service-desc">
+            Уберём мелкую строительную взвесь со стен и потолков, снимем защитную плёнку с окон и отмоем затирку.
+          </p>
+
+          <ul class="checklist">
+            <li>Обеспыливание стен, потолков и мебели пром-пылесосом</li>
+            <li>Удаление следов грунтовки, скотча, клея и краски</li>
+            <li>Чистка оконных рам, откосов и фурнитуры</li>
+            <li>Глубокая размывка керамогранита и ламината</li>
+            <li>Сбор и вынос мелкого строительного мусора</li>
+          </ul>
+
+          <a class="card-btn" href="#calc" data-select-type="renovation">Рассчитать точную цену →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CALCULATOR -->
+    <section class="calc-section section" id="calc">
+      <div class="calc-wrapper">
+        <div class="calc-controls">
+          <p class="eyebrow">ОНЛАЙН-КАЛЬКУЛЯТОР</p>
+          <h2>Узнайте стоимость уборки прямо сейчас</h2>
+          <p class="calc-subtitle">Цена фиксируется в заявке и не вырастет по приезду клинера.</p>
+
+          <div class="control-group">
+            <label class="control-label">1. Выберите тип уборки</label>
+            <div class="type-tabs" id="typeTabs">
+              <button type="button" class="type-tab active" data-type="basic" data-rate="75" data-base="1500">Поддерживающая</button>
+              <button type="button" class="type-tab" data-type="deep" data-rate="135" data-base="2200">Генеральная</button>
+              <button type="button" class="type-tab" data-type="renovation" data-rate="175" data-base="2800">После ремонта</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="range-header">
+              <label class="control-label" for="areaRange">2. Площадь квартиры</label>
+              <span class="area-value"><strong id="areaOutput">52</strong> м²</span>
+            </div>
+            <input type="range" id="areaRange" min="25" max="150" value="52" step="1">
+            <div class="range-marks">
+              <span>Студия (25 м²)</span>
+              <span>Евродвушка (55 м²)</span>
+              <span>3-комн (90 м²)</span>
+              <span>150 м²</span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">3. Дополнительные опции (по желанию)</label>
+            <div class="extras-grid">
+              <label class="extra-chip">
+                <input type="checkbox" class="extra-input" value="1200" data-name="Мытьё окон">
+                <span>Мытьё окон (+1 200 ₽)</span>
+              </label>
+              <label class="extra-chip">
+                <input type="checkbox" class="extra-input" value="700" data-name="Духовка внутри">
+                <span>Помыть духовку (+700 ₽)</span>
+              </label>
+              <label class="extra-chip">
+                <input type="checkbox" class="extra-input" value="600" data-name="Холодильник внутри">
+                <span>Холодильник (+600 ₽)</span>
+              </label>
+              <label class="extra-chip">
+                <input type="checkbox" class="extra-input" value="500" data-name="Забрать ключи">
+                <span>Доставка ключей (+500 ₽)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-summary">
+          <div class="summary-top">
+            <span class="summary-label">Итоговая смета</span>
+            <div class="total-price" id="totalPrice">5 400 ₽</div>
+            <p class="summary-meta" id="summaryMeta">Поддерживающая уборка · 52 м² · 1 клинер (~3.5 ч)</p>
+          </div>
+
+          <ul class="summary-perks">
+            <li>✓ Химия Kiehl и Pro-Brite включена</li>
+            <li>✓ Выезд в пределах МКАД — 0 ₽</li>
+            <li>✓ Оплата картой или СБП после проверки</li>
+          </ul>
+
+          <button type="button" class="button button-full" id="applyCalcBtn">
+            Забронировать эту цену →
+          </button>
+          <span class="calc-disclaimer">Скидка 10% на первый заказ уже учтена в расчёте</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US / STANDARDS -->
+    <section class="about section" id="about">
+      <div class="about-text">
+        <p class="eyebrow">ПОЧЕМУ НАМ ДОВЕРЯЮТ КЛЮЧИ</p>
+        <h2>Безопасность для поверхностей, детей и питомцев</h2>
+        <p>
+          Мы не нанимаем случайных исполнителей с досок объявлений. Каждый клинер проходит проверку службы безопасности, двухнедельную стажировку по работе с деликатными материалами (мрамор, кварцвинил, латунь, матовые фасады) и сдаёт экзамен по химии.
+        </p>
+
+        <div class="chem-badges">
+          <span>Гипоаллергенные составы</span>
+          <span>Без запаха хлорки</span>
+          <span>Цветная кодировка салфеток</span>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-item">
+          <span class="item-num">01</span>
+          <h3>4 разные салфетки на квартиру</h3>
+          <p>Салфетка для санузла никогда не попадёт на кухонный стол — используем строгую цветовую маркировку микрофибры.</p>
+        </div>
+        <div class="about-item">
+          <span class="item-num">02</span>
+          <h3>Приезжаем вовремя или делаем скидку</h3>
+          <p>Если клинер задержится более чем на 15 минут без предупреждения, автоматически снижаем чек на 500 ₽.</p>
+        </div>
+        <div class="about-item">
+          <span class="item-num">03</span>
+          <h3>Не нужно сидеть дома</h3>
+          <p>Можете оставить ключи или заехать по делам. За 40 минут до окончания позвоним, чтобы вы спокойно приняли работу.</p>
+        </div>
+        <div class="about-item">
+          <span class="item-num">04</span>
+          <h3>Честная фиксация стоимости</h3>
+          <p>Согласуем итоговую сумму до начала уборки по фото или метражу — никаких внезапных «накруток» в дверях.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews section" id="reviews">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ОТЗЫВЫ КЛИЕНТОВ</p>
+          <h2>Реальные истории после выездов</h2>
+        </div>
+        <p class="heading-sub">
+          Что говорят жители Москвы, которые уже передали рутину нам.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="avatar">ЕК</div>
+            <div>
+              <strong>Екатерина В.</strong>
+              <span>ЖК «ЗИЛАРТ» · Генеральная, 64 м²</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            «Вызывала после квартирантов — думала, духовку и известковый налёт на чёрной сантехнике уже ничего не спасёт. Приехали две девушки с парогенератором, за 5 часов отмыли так, что смесители блестят как из коробки. Цену какую назвали в Телеграме, такую и заплатила».
+          </p>
+          <span class="review-date">12 дней назад · Источник: Яндекс Карты</span>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="avatar avatar-alt">АС</div>
+            <div>
+              <strong>Артём Соколов</strong>
+              <span>м. Сокол · После ремонта, 45 м²</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            «Строители оставили белую пыль вообще везде, даже внутри розеток и в направляющих шкафа. Ребята привезли огромный строительный Karcher, сняли прикипевшую плёнку с окон без единой царапины. Вечером завезли матрас и сразу легли спать в чистой квартире».
+          </p>
+          <span class="review-date">3 недели назад · Источник: Telegram</span>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header">
+            <div class="avatar avatar-green">МД</div>
+            <div>
+              <strong>Мария Дорофеева</strong>
+              <span>м. Раменки · Поддерживающая, 78 м²</span>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            «Беру поддерживающую каждые две недели по пятницам. Утром отдаю ключи постоянному клинеру Ольге, уезжаю в офис, а вечером возвращаюсь в идеальный дом. Отдельный плюс — химия вообще не пахнет, у нас французский бульдог-аллергик и всё супер».
+          </p>
+          <span class="review-date">Месяц назад · Источник: Авито (5.0)</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="faq-container">
+        <div class="faq-intro">
+          <p class="eyebrow">ЧАСТЫЕ ВОПРОСЫ</p>
+          <h2>Отвечаем сразу и без мелкого шрифта</h2>
+          <p>Не нашли свой вопрос? Напишите нам в мессенджер или оставьте заявку ниже — ответим за 5 минут.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Нужно ли мне предоставлять пылесос, тряпки или средства?</summary>
+            <p>Нет, клинер привозит с собой всё необходимое: профессиональную химию, чистые комплекты микрофибры, губки и инвентарь. Для генеральной уборки и после ремонта мы бесплатно доставляем мощный пылесос, парогенератор и стремянку.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>А что если клинер случайно что-то повредит?</summary>
+            <p>Все заказы застрахованы. Если в процессе уборки пострадает поверхность или предмет интерьера, мы компенсируем ремонт или полную стоимость вещи из собственного резервного фонда за 3 рабочих дня без бюрократии.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Обязательно ли находиться дома во время уборки?</summary>
+            <p>Совсем не обязательно. Вы можете встретить клинера, показать фронт работ и уехать по своим делам. За 30–40 минут до завершения специалист позвонит вам, чтобы вы успели вернуться и проверить качество.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Можно ли заказать уборку день в день?</summary>
+            <p>Да, если у нас есть свободная мобильная бригада в вашем округе, мы приедем через 2–3 часа после заявки без наценки за срочность.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact section" id="contact">
+      <div class="contact-info">
+        <p class="eyebrow">ОСТАВИТЬ ЗАЯВКУ</p>
+        <h2>Забронируйте чистоту со скидкой 10% на первый выезд</h2>
+        <p>
+          Оставьте контакты — перезвоним или напишем в Telegram/WhatsApp в течение 5 минут, уточним удобное время и закрепим цену.
+        </p>
+
+        <div class="contact-perks">
+          <div>
+            <strong>Без спама и навязывания</strong>
+            <span>Напишем в мессенджер, если вы не любите звонки</span>
+          </div>
+          <div>
+            <strong>Оплата только по факту</strong>
+            <span>Никаких предоплат при бронировании даты</span>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <div>
+            <label for="name">Как к вам обращаться</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Например, Михаил"
+              required
+            >
+          </div>
+          <div>
+            <label for="phone">Телефон или @ник в Telegram</label>
+            <input
+              id="phone"
+              name="phone"
+              type="text"
+              placeholder="+7 (999) 000-00-00"
+              required
+            >
+          </div>
+        </div>
+
+        <label for="message">Параметры квартиры или комментарий</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="3"
+          placeholder="Например: двухкомнатная 55 м², нужна генеральная уборка на субботу утром..."
+          required
+        ></textarea>
+
+        <button class="button button-full" type="submit">
+          Рассчитать и закрепить скидку 10% →
+        </button>
+
+        <p class="privacy-hint">Нажимая кнопку, вы соглашаетесь на обработку данных. Перезвоним или напишем за 5 минут.</p>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a class="logo logo-light" href="#">Светлый<span>Дом.</span></a>
+        <p class="footer-tagline">Сервис бережной уборки квартир и загородных домов в Москве и области.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Тарифы</a>
+        <a href="#calc">Калькулятор</a>
+        <a href="#about">Стандарты</a>
+        <a href="#reviews">Отзывы</a>
+      </div>
+    </div>
+
+    <div class="developer-contact">
+      <div class="dev-info">
+        <span class="dev-badge">CASE STUDY · ПОРТФОЛИО ВЕБ-РАЗРАБОТЧИКА</span>
+        <p>Этот лендинг — демонстрационный проект. Нужен сайт, который вызывает доверие и приводит заявки?</p>
+      </div>
+
+      <a
+        class="dev-cta"
+        href="https://t.me/dope1230"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Обсудить проект в Telegram → @dope1230
+      </a>
+    </div>
+  </footer>
+
+  <!-- Floating Portfolio Pill for Potential Clients -->
+  <a
+    href="https://t.me/dope1230"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="portfolio-float"
+    aria-label="Заказать разработку сайта в Telegram"
+  >
+    <span class="pf-dot"></span>
+    <span>Хотите такой сайт? <strong>Написать разработчику @dope1230</strong></span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
